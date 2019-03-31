@@ -29,7 +29,7 @@ pipeline {
 	     steps {
 		//Prepare SonarQube scanner enviornment
 		withSonarQubeEnv('SonarQube analysis') {
-		 sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.6.0.1398:sonar'
+		 sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.3.0.603:sonar'
 		}
 	      }
 	}
